@@ -1,5 +1,5 @@
 import { useMemo,useState } from "react";
-import { Search, Mail, Phone, Building2, X } from "lucide-react";
+import { Search, Mail, Phone, Building2 } from "lucide-react";
 import { useAppSelector } from "../../app/hooks";
 import PageHeader from "../../components/ui/PageHeader";
 import Modal from "../../components/ui/Modal";

@@ -1,3 +1,10 @@
-import { defineConfig } from "vite";
+import { defineConfig, type UserConfig } from "vite";
 import react from "@vitejs/plugin-react";
-export default defineConfig({ plugins: [react()], server: { port: 5173, host: true }, test: { environment: "jsdom", setupFiles: "./src/test/setup.ts", css: true } });
+
+const config = {
+  plugins: [react()],
+  server: { port: 5173, host: true },
+  test: { environment: "jsdom", setupFiles: "./src/test/setup.ts", css: true },
+};
+
+export default defineConfig(config as UserConfig);

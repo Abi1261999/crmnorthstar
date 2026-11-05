@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction, nanoid } from "@reduxjs/toolkit";
-import type { Activity, CrmState, CrmTask, Customer, Deal, Lead, LeadStatus, DealStage } from "../../types/crm";
+import type { Activity, CrmState, CrmTask, Lead, DealStage } from "../../types/crm";
 
 const initialState: CrmState = {
   search: "",
