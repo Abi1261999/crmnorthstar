@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Plus, Search, Pencil, Trash2, X } from "lucide-react";
+import { Plus, Search, Pencil, Trash2 } from "lucide-react";
 import { useAppDispatch,useAppSelector } from "../../app/hooks";
 import { addLead,deleteLead,updateLead } from "../crm/crmSlice";
 import type { Lead,LeadStatus } from "../../types/crm";
