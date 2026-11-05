@@ -1,0 +1,9 @@
+export type LeadStatus = "New" | "Contacted" | "Qualified" | "Proposal" | "Won" | "Lost";
+export type Priority = "Low" | "Medium" | "High";
+export type Lead = { id: string; name: string; company: string; email: string; phone: string; source: string; status: LeadStatus; value: number; owner: string; createdAt: string };
+export type DealStage = "Qualification" | "Discovery" | "Proposal" | "Negotiation" | "Won";
+export type Deal = { id: string; name: string; company: string; value: number; stage: DealStage; owner: string; closeDate: string };
+export type Customer = { id: string; name: string; company: string; email: string; phone: string; status: "Active" | "At risk" | "Churned"; value: number; lastContact: string; initials: string };
+export type CrmTask = { id: string; title: string; relatedTo: string; assignee: string; dueDate: string; priority: Priority; completed: boolean };
+export type Activity = { id: string; type: "Call" | "Email" | "Meeting" | "Note"; title: string; person: string; company: string; date: string; detail: string };
+export type CrmState = { leads: Lead[]; deals: Deal[]; customers: Customer[]; tasks: CrmTask[]; activities: Activity[]; search: string };
